@@ -1,9 +1,9 @@
 import streamlit as st
 import pickle
 
-with open("/workspaces/streamlitrender/normscaler.pk", "rb") as openfile:
+with open("/workspaces/streamlitrender/src/normscaler.pk", "rb") as openfile:
     scaler_model = pickle.load(openfile)
-with open("/workspaces/streamlitrender/linealmodel.pk", "rb") as openfile:
+with open("/workspaces/streamlitrender/src/linealmodel.pk", "rb") as openfile:
     model = pickle.load(openfile)
 
 def main():
